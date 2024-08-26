@@ -1,0 +1,91 @@
+#map_main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column
+}
+
+#map_map {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./img/map.png");
+    background-repeat: no-repeat;
+    background-size: 350px;
+    background-position: 50% 50%;
+}
+
+#map_stats {
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+   padding: 0px 20px;
+}
+
+#map_stats h2 {
+    text-align: center;
+    margin: 0;
+    color: white; 
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+#map_stats p {
+    text-align: end;
+    margin: 0;
+    color: white;
+    font-size: 15px;
+}
+
+
+#map_bands {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    height: 432px;
+    width: 313px;
+    mask-image: url("./img/masked.png");
+    mask-size: 300px;
+    mask-position: 7px -10px;
+    mask-repeat: no-repeat;
+}
+
+#map_atztek,
+#map_vagos,
+#map_gs,
+#map_ballas {
+    min-height: 0px;
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    align-content: flex-start;
+    overflow: hidden;
+    position: relative;
+}
+
+#map_atztek {
+    background-color: rgba(233, 68, 60, 0.76);
+}
+
+#map_atztek p,
+#map_vagos p,
+#map_gs p,
+#map_ballas p{
+    font-size: 90%;
+}
+
+#map_vagos {
+    background-color: rgba(212, 142, 20, 0.76);
+}
+
+#map_gs {
+    background-color: rgba(66, 138, 70, 0.76);
+}
+
+#map_ballas {
+    background-color: rgba(162, 15, 238, 0.76);
+}

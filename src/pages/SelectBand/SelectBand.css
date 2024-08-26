@@ -1,0 +1,133 @@
+#select_main {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0px 10px 0px 10px;
+}
+
+#select_invite {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    gap: 10px;
+}
+
+#select_invite img{
+    height: 120px;
+    width: auto;
+}
+
+#select_invite h1{
+    margin: 0;
+}
+
+#select_invite p{
+    margin: 0;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#select_list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.select_block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border-radius: 50px;
+    color: white;
+    padding: 5px 10px 5px 10px;
+}
+
+.select_avatar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.select_avatar img{
+    width: 35px;
+    height: auto;
+    padding-top: 10px;
+}
+
+.select_name {
+    flex: auto;
+}
+
+.select_name h2{
+    margin: 0;
+}
+
+#select_button {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(90deg, #7d1afe, #a20fee);
+    border-radius: 50px;
+    
+}
+#select_button h3{
+    color: white;
+    text-align: center;
+}
+
+.select_block.ballas {
+    background: linear-gradient(
+        90deg,
+        rgb(123, 26, 255),
+        rgb(162, 15, 238)
+    );
+}
+
+.select_block.gs {
+    background: linear-gradient(
+        90deg,
+        rgb(66, 138, 70),
+        rgb(51, 112, 54)
+    );
+}
+
+.select_block.vagos {
+    background: linear-gradient(
+        90deg,
+        rgb(255, 198, 26),
+        rgb(212, 142, 20)
+    );
+}
+
+.select_block.atztek {
+    background: linear-gradient(
+        90deg,
+        rgb(244, 64, 16),
+        rgb(192, 71, 130)
+    );
+}
+
+.select_avatar.ballas {
+    background-color: #610cd5;
+}
+
+.select_avatar.gs {
+    background-color: #357038;
+}
+
+.select_avatar.vagos {
+    background-color: #cc9712;
+}
+
+.select_avatar.atztek {
+    background-color: #c73623;
+}

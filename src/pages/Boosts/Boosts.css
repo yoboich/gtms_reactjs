@@ -1,0 +1,343 @@
+#boosts_main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#boosts_score {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#boosts_score h1{
+    margin: 0;
+    font-size: 45px;
+}
+
+#boosts_score p{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    gap: 10px;
+}
+
+#boosts_score p::before {
+    content: "";
+    display: block;
+    background-color: #ffc61a;
+    border-radius: 50%;
+    height: 5px;
+    width: 5px;
+}
+
+#boosts_score p::after {
+    content: "";
+    display: block;
+    background-color: #ffc61a;
+    border-radius: 50%;
+    height: 5px;
+    width: 5px;
+}
+
+#boost_boosters {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+#boost_boosters_container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(112, 112, 112, 0.3);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.boost_item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boost_item.disabled {
+    filter: grayscale(100%);
+}
+
+.boost_item_photo {
+    background-color: rgba(112, 112, 112, 0.3);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+}
+
+.boost_item_photo span{
+    margin: 0;
+    font-size: 30px;
+}
+
+.boost_item_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.boost_item_content h3{
+    margin: 0;
+}
+
+.boost_item_content div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 7px;
+}
+
+.boost_item_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.boost_item_content p{
+    margin: 0;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7px;
+    font-weight: 100;
+}
+
+.boost_item_content p:nth-child(1)::after{
+    content: "";
+    display: block;
+    background-color: white;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+}
+
+.boost_item_arrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boost_item_arrow img{
+    width: 15px;
+    height: 15px;
+}
+
+#boost_tasks {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    flex: auto;
+}
+
+#boost_tasks_container {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+    height: 10px;
+}
+
+.boost_tasks_item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(112, 112, 112, 0.3);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.boost_tasks_item.checked {
+    filter: grayscale(100%);
+    opacity: 0.6;
+}
+
+.boost_tasks_item_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.boost_tasks_item_photo {
+    min-width: 60px;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(112, 112, 112, 0.3);
+    border-radius: 50%;
+}
+
+.boost_tasks_item_photo img {
+    width: auto;
+    height: 30px;
+}
+
+.boost_tasks_item_photo.x img {
+    width: 30px !important;
+    height: auto;
+}
+
+.boost_tasks_item_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.boost_tasks_item_content h3{
+    margin: 0;
+}
+
+.boost_tasks_item_content p{
+    margin: 0;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.boost_tasks_item_arrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boost_tasks_item_arrow img{
+    width: 15px;
+    height: 15px;
+}
+
+body:has(#task_background) {
+    overflow: hidden;
+}
+
+.fadeIn:has(#task_background) {
+    animation: none;
+}
+
+#task_background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    filter: drop-shadow(0px 34vh 41px #d04de4)
+}
+
+#task_main_back {
+    width: 100%;
+    height: 60%;
+    background: radial-gradient(at top, #d04de4 24%, #1c1f24 76%);
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#task_main {
+    background-color: #1c1f24;
+    width: 100%;
+    height: 98%;
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+#task_main_cross_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 15px 15px 0px 0px;
+}
+
+#task_main_cross_circle {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(112, 112, 112, 0.3);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#task_main_cross_circle img{
+    width: 20px !important;
+    height: 20px !important;
+}
+
+#task_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    gap: 10px;
+}
+
+#task_info h2 {
+    margin: 0;
+    align-self: center;
+}
+
+#task_info img {
+    width: auto;
+    height: 120px;
+    align-self: center;
+}
+
+#task_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+#task_button h3{
+    margin: 0;
+}
+
+#task_button h2{
+    margin: 0;
+    background: linear-gradient(90deg, #7d1afe, #a20fee);
+    padding: 15px 70px;
+    border-radius: 20px;
+}
+
+.boost_tasks_item.void {
+    height: 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boost_tasks_item.void p{
+    margin: 0;
+}
