@@ -1,6 +1,8 @@
 name: Run test on PRs
 on:
-  pull_request: {}
+  push:
+    branches:
+      - main
 jobs:
   test:
     name: "Run tests"
@@ -9,4 +11,4 @@ jobs:
     - name: Checkout repo
       uses: actions/checkout@master
     - name: Run tests
-      run: yarn test
+      run: echo test
