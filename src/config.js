@@ -1,7 +1,7 @@
 const config = {
-    socket_addr: "https://arcane-bot.online",
-    bot_url: "https://t.me/GTM_SEIZURE_BOT",
-    back_url: "https://arcane-bot.online/api",
+    socket_addr: "https://tst.arcane-nft-bot.online",
+    bot_url: "https://t.me/TurboGpt5bot",
+    back_url: "https://tst.arcane-nft-bot.online/api",
     levels: {
       "1": [5000, 500],
     

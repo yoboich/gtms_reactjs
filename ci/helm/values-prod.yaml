@@ -1,0 +1,27 @@
+image:
+  repository: yeasy/simple-web
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  targetPort: 80
+  port: 8080
+
+serviceAccount:
+  # Specifies whether a service account should be created
+  create: false
+
+ingress:
+  enabled: true
+  hosts:
+    - host: tst.arcane-bot.online
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
+  annotations:
+    cert-manager.io/acme-challenge-type: http01
+    cert-manager.io/cluster-issuer: my-acme01
+  tls:
+   - secretName: front-tls
+     hosts:
+       - tst.arcane-bot.online

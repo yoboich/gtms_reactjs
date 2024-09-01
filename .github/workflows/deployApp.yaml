@@ -1,0 +1,12 @@
+name: Run test on PRs
+on:
+  pull_request: {}
+jobs:
+  test:
+    name: "Run tests"
+    runs-on: [self-hosted]
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@master
+    - name: Run tests
+      run: yarn test
